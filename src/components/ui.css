@@ -1,0 +1,8 @@
+.nav{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:#222;color:#eee;border-bottom:1px solid #333}
+.nav .brand{color:#9ecbff;text-decoration:none;font-weight:700}
+.nav .links{display:flex;gap:12px}
+.nav .links a{color:#eee;text-decoration:none;padding:6px 8px;border-radius:6px}
+.nav .links a.active{background:#333}
+
+.container{max-width:720px;margin:24px auto;padding:0 16px;color:#eee}
+.card{background:#222;border:1px solid #333;border-radius:10px;padding:16px}
