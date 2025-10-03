@@ -1,8 +1,26 @@
-.nav{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:#222;color:#eee;border-bottom:1px solid #333}
-.nav .brand{color:#9ecbff;text-decoration:none;font-weight:700}
-.nav .links{display:flex;gap:12px}
-.nav .links a{color:#eee;text-decoration:none;padding:6px 8px;border-radius:6px}
-.nav .links a.active{background:#333}
+.service-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap:16px;
+}
+.service-card{
+  background:#222; border:1px solid #333; border-radius:10px; overflow:hidden;
+}
+.service-card img{ width:100%; height:150px; object-fit:cover; display:block; }
+.service-body{ padding:12px; }
+.service-body h3{ margin:4px 0 6px; }
+.service-body .precio{ font-weight:700; margin:6px 0 10px; }
 
-.container{max-width:720px;margin:24px auto;padding:0 16px;color:#eee}
-.card{background:#222;border:1px solid #333;border-radius:10px;padding:16px}
+.grid-2{ display:grid; gap:16px; }
+@media (min-width: 900px){
+  .grid-2{ grid-template-columns: 1fr 1fr; }
+}
+.map-wrap iframe{
+  width:100%; height:320px; border:0; border-radius:10px;
+}
+
+.form{ display:grid; gap:12px }
+.input,.textarea{ width:100%; padding:10px; border-radius:8px; border:1px solid #444; background:#111; color:#eee; }
+.btn{ background:#2563eb; color:#fff; border:none; padding:10px 14px; border-radius:8px; cursor:pointer }
+.error{ color:#f87171; font-size:.9rem }
+.okbox{ background:#134e4a; color:#d1fae5; padding:10px; border-radius:8px; margin-bottom:8px }
