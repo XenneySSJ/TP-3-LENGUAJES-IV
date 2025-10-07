@@ -7,7 +7,8 @@ export default function Navbar() {
       <Link to="/" className="brand">TP React</Link>
       <nav className="links">
         <NavLink to="/" end>Inicio</NavLink>
-        <NavLink to="/servicios">Servicios</NavLink>  
+        <NavLink to="/servicios">Servicios</NavLink>
+        <NavLink to="/api">API</NavLink>
         <NavLink to="/contacto">Contacto</NavLink>
       </nav>
     </header>

@@ -24,3 +24,48 @@
 .btn{ background:#2563eb; color:#fff; border:none; padding:10px 14px; border-radius:8px; cursor:pointer }
 .error{ color:#f87171; font-size:.9rem }
 .okbox{ background:#134e4a; color:#d1fae5; padding:10px; border-radius:8px; margin-bottom:8px }
+
+.rate-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: 14px;
+}
+
+.rate-card {
+  background: #222;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 12px;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 12px;
+}
+
+.rate-flag {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  background: #111;
+}
+
+.rate-body h3 {
+  margin: 0 0 4px;
+}
+
+.api-list {
+  margin: 6px 0 0;
+  padding-left: 18px;
+}
+
+@media (max-width: 520px) {
+  .rate-card {
+    grid-template-columns: 1fr;
+  }
+
+  .rate-flag {
+    width: 100%;
+    height: 120px;
+  }
+}
